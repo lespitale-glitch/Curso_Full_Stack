@@ -1,0 +1,85 @@
+/* Sección contacto */
+#contacto {
+    padding: 80px 40px; /* Espacio alrededor de toda la sección */
+    background-color: #f4f4f4; /* Fondo gris claro */
+}
+
+#contacto h2 {
+    text-align: center; /* Centra el título */
+    font-size: 2rem; /* Hace el título más grande */
+    color: #1f3b5b; /* Azul oscuro */
+    margin-bottom: 40px; /* Espacio debajo del título */
+}
+
+/* Formulario */
+#contacto form {
+    max-width: 700px; /* Limita el ancho */
+    margin: 0 auto; /* Centra el formulario */
+    background-color: white; /* Caja blanca */
+    padding: 40px; /* Espacio interno */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Labels */
+#contacto label {
+    display: block; /* Cada label ocupa una línea */
+    margin-bottom: 8px; /* Espacio antes del campo */
+    font-weight: bold; /* Hace el texto más visible */
+    color: #1f3b5b;
+}
+
+/* Inputs, select y textarea */
+#contacto input,
+#contacto select,
+#contacto textarea {
+    width: 100%; /* Ocupan todo el ancho disponible */
+    padding: 12px; /* Espacio interno */
+    margin-bottom: 20px; /* Separación entre campos */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 8px; /* Bordes redondeados */
+    font-size: 1rem;
+}
+
+/* Textarea más alto */
+#contacto textarea {
+    min-height: 120px;
+    resize: vertical; /* Solo permite agrandar verticalmente */
+}
+
+/* Contenedor del checkbox y su texto */
+.checkbox {
+    display: flex; /* Pone checkbox y texto en la misma fila */
+    align-items: center; /* Los alinea verticalmente */
+    gap: 10px; /* Espacio entre checkbox y texto */
+    margin-bottom: 25px;
+}
+
+/* El checkbox no debe ocupar todo el ancho */
+.checkbox input {
+    width: auto;
+    margin: 0;
+}
+
+/* El texto del checkbox */
+.checkbox label {
+    display: inline;
+    margin: 0;
+    color: #1f3b5b;
+}
+
+/* Contenedor de botones */
+.botones-formulario {
+    display: flex;
+    gap: 15px;
+}
+
+/* Botones */
+.botones-formulario button {
+    background-color: #1f3b5b;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
