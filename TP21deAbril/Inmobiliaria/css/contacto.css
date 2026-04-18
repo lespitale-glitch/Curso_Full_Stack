@@ -1,12 +1,12 @@
 /* Sección contacto */
 #contacto {
-    padding: 80px 40px; /* Espacio alrededor de toda la sección */
+    padding: 40px 20px; /* Espacio alrededor de toda la sección */
     background-color: #f4f4f4; /* Fondo gris claro */
 }
 
 #contacto h2 {
     text-align: center; /* Centra el título */
-    font-size: 2rem; /* Hace el título más grande */
+    font-size: 20px; /* Hace el título más grande */
     color: #1f3b5b; /* Azul oscuro */
     margin-bottom: 40px; /* Espacio debajo del título */
 }
@@ -35,16 +35,16 @@
 #contacto textarea {
     width: 100%; /* Ocupan todo el ancho disponible */
     padding: 12px; /* Espacio interno */
-    margin-bottom: 20px; /* Separación entre campos */
+    margin-bottom: 10px; /* Separación entre campos */
     border: 1px solid #ccc; /* Borde gris */
     border-radius: 8px; /* Bordes redondeados */
     font-size: 1rem;
+    box-sizing: border-box;
 }
 
 /* Textarea más alto */
 #contacto textarea {
-    min-height: 120px;
-    resize: vertical; /* Solo permite agrandar verticalmente */
+    height: 50px;
 }
 
 /* Contenedor del checkbox y su texto */
@@ -52,7 +52,7 @@
     display: flex; /* Pone checkbox y texto en la misma fila */
     align-items: center; /* Los alinea verticalmente */
     gap: 10px; /* Espacio entre checkbox y texto */
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 /* El checkbox no debe ocupar todo el ancho */
@@ -72,6 +72,7 @@
 .botones-formulario {
     display: flex;
     gap: 15px;
+    margin-top: 20px ;
 }
 
 /* Botones */
@@ -83,3 +84,4 @@
     border-radius: 8px;
     cursor: pointer;
 }
+

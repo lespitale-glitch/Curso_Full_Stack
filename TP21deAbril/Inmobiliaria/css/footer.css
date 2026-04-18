@@ -4,6 +4,7 @@ footer {
     color: white;
     text-align: center;
     padding: 30px 20px;
+    border-radius: 20px;/* Bordes redondeados */
 }
 
 .info-footer {
