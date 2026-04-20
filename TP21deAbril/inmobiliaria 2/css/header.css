@@ -1,0 +1,41 @@
+/* Dos secciones, Logo NT y menú, entonces usamos display flex para dejar el logo a la izq, y menu a la derecha, en una sola linea */
+header {
+  display: flex;
+  justify-content: space-between; /*separo los dos bloques hasta los extremos*/
+  align-items: center; /*alineo verticalmente*/
+  padding: 20px;
+  background-color: white;
+  width: 100%; /* Para que el header ocupe todo el ancho de la pantalla */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+main {
+  padding-top: 100px;
+}
+/* Para dejar los links del menu en linea, tambien display flex*/
+nav ul {
+  display: flex; /* Dejo los links en linea */
+  gap: 20px; /* Espacio entre los links */
+  list-style: none; /* Quitar los puntos de la lista */
+}
+/* Estilo para links del menu, quitar subrayado y poner color azul */
+nav a {
+  text-decoration: none; /* Quitar subrayado */
+  color: var(
+    --azul
+  ); /* Usamos la variable de color azul definida en style.css */
+  font-weight: bold; /* Hacer el texto del menu un poco mas grueso */
+}
+/* Estilo para el logo, alineamos el texto y la imagen en una sola linea */
+.logo {
+  display: flex;
+  align-items: center;
+}
+/* Estilo para la imagen del logo, ajustamos el tamaño para que no sea demasiado grande class=logo espacio img*/
+.logo img {
+  width: 100px;
+}
+
+

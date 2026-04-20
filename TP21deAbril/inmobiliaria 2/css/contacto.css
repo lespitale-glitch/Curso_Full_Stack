@@ -1,0 +1,48 @@
+/*seccion. id tasacion*/
+#tasacion {
+  padding: 80px 40px;
+}
+/*titulo*/
+#tasacion h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--azul);
+}
+/*formulario de tasacion*/
+#tasacion form {
+  max-width: 700px;
+  margin: 0 auto;
+}
+/*campos del formulario*/
+#tasacion input,
+#tasacion select,
+#tasacion textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.botones-formulario {
+  display: flex;
+  gap: 10px;
+}
+.botones-formulario button {
+  background-color: var(--azul);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+}
+/*regla mas especifica para chekbox, para que no tome el width 100% de los otros inputs (pero no logre objetivo de acercar el checkbox a la descripción*/
+.checkbox input {
+  width: auto;
+}
+.checkbox label {
+  margin: 0;
+}

@@ -1,0 +1,54 @@
+/* Para que el home ocupe toda la pantalla, y el footer quede abajo aunque no haya mucho contenido */
+#home {
+  min-height: 100vh;
+}
+/* Estilo para la imagen del home, para que ocupe toda la pantalla y se ajuste sin distorsionarse */
+#home img {
+  width: 100%; /* Para que la imagen ocupe todo el ancho de la pantalla */
+  height: 80vh; /* Para que la imagen ocupe toda la altura de la pantalla */
+  object-fit: cover; /* Para que la imagen se ajuste al contenedor sin distorsionarse, recortando si es necesario */
+}
+
+/* Estilo para el texto del home, para que se superponga a la imagen y quede centrado */
+#home {
+  position: relative; /* Para que el texto se posicione relativo a este contenedor */
+  min-height: auto; /* Para que el home ocupe toda la pantalla, y el footer quede abajo aunque no haya mucho contenido */
+}
+
+/* Estilo para el título del home, para que sea grande y llamativo */
+.contenido-home {
+  position: absolute; /* permite mover el cudro sobre la imagen */
+  top: 65%; /* Para centrar verticalmente el texto */
+  left: 50%; /* Para centrar horizontalmente el texto, ajustamos el valor para que quede a la izquierda */
+  transform: translate(-50%, -50%);/* Para centrar el texto exactamente en el medio del contenedor */
+  
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px; /* Para dar un poco de espacio al texto dentro del recuadro */
+  max-width: 400px; /* Para limitar el ancho del texto y evitar que se extienda demasiado */
+}
+/*estilo para el titulo del home, para que sea grande y llamativo, y tenga un poco de espacio debajo para separar del texto*/
+.contenido-home h2 {
+  color: var(--azul);
+  margin-bottom: 15px;
+  
+}
+/*estilo para el boton del home, para que sea llamativo y tenga el mismo estilo que los botones de las tarjetas*/
+.contenido-home p {
+  margin-bottom: 20px;
+}
+/* Para que el boton tenga un poco de espacio al rededor, y no quede pegado al texto */
+.contenido-home a {
+  background-color: var(--azul);
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+}
+.eslogan {
+  background-color: var(--azul);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  height: 170px;
+  font-size: 3rem;
+  font-weight: bold;
+}

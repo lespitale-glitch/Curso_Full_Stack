@@ -1,0 +1,48 @@
+/*id alquieler y ide venta*/
+#alquiler,
+#venta {
+  padding: 80px 40px;
+  height: 100vh;
+}
+/*id alquiler + selector h2 - id venta + selector h2*/
+#alquiler h2,
+#venta h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--azul);
+}
+/*clase contenedor galería*/
+.contenedor-galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Para crear una cuadrícula de 3 columnas de igual ancho */
+  gap: 30px;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: var(--radio);/* Para aplicar el mismo radio de bordes que definimos en style.css */
+}
+.contenedor-galeria img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+#alquiler {
+    margin-bottom: 100px; /* Para dar un poco de espacio entre la sección de alquiler y la siguiente sección de venta */
+}
+#venta h2{
+    margin-bottom: 80px; /* Para dar un poco de espacio entre la sección de venta y la siguiente sección (si hubiera) */
+}
+
+.item-galeria img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.item-galeria img:hover {
+  transform: scale(1.05);
+}

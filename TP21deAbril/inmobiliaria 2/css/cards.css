@@ -1,0 +1,48 @@
+.contenedor-cards {
+  display: flex; /* Para colocar las tarjetas en fila */
+  justify-content: center; /* Para centrar las tarjetas horizontalmente */
+  gap: 30px; /* Espacio entre las tarjetas */
+  flex-wrap: wrap;
+}
+#propiedades h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-top: 60px;
+}
+
+/*clase card*/
+.card {
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+  flex-shrink: 0; /* Para evitar que las tarjetas se reduzcan de tamaño si el contenedor es más pequeño */
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color: var(--azul);
+}
+
+.card p {
+  margin-bottom: 15px;
+}
+
+.card a {
+  display: inline-block;
+  background-color: var(--azul);
+  color: white;
+  text-decoration: none;
+  padding: 10px 16px;
+}
