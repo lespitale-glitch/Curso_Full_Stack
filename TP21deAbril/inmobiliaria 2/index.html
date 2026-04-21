@@ -18,17 +18,18 @@
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
+  
   <body>
     <!-- Header con logo y menú de navegación -->
     <header>
       <a href="#home" class="logo">
         <img src="img/inmobiliaria/NT_T_simple.png" alt="Logo Nuevo Techo" />
       </a>
-
-      <nav>
+      <button class="menu-toggle" id="menu-toggle">☰</button>
+      <nav id="menu">
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#propiedades">Propiedades destacadas</a></li>
+          <li><a href="#propiedades">Destacadas</a></li>
           <li><a href="#alquiler">Alquiler</a></li>
           <li><a href="#venta">Venta</a></li>
           <li><a href="#tasacion">Tasación</a></li>
@@ -58,52 +59,52 @@
       <!-- Sección de propiedades destacadas con cards -->
       <section id="propiedades">
         <h2>Propiedades destacadas</h2>
-
+<!--propiedad 1 -->
         <div class="contenedor-cards">
           <article class="card">
-            <img src="img/destacadas/casa.png" alt="Casa moderna" />
+            <img src="img/destacadas/casa.jpeg" alt="Casa moderna" />
             <h3>Casa moderna</h3>
             <p>3 ambientes · Jardín · USD 120.000</p>
             <a href="#tasacion">ver mas</a>
           </article>
-
+<!--propiedad 2 -->
           <article class="card">
             <img
-              src="img/destacadas/departamento centrico.png"
+              src="img/destacadas/departamento centrico.jpeg"
               alt="Departamento céntrico"
             />
             <h3>Departamento</h3>
             <p>2 ambientes · Balcón · USD 85.000</p>
             <a href="#tasacion">Ver más</a>
           </article>
-
+<!--propiedad 3-->
           <article class="card">
-            <img src="img/destacadas/oficina.png" alt="Oficina comercial" />
+            <img src="img/destacadas/oficina.jpeg" alt="Oficina comercial" />
             <h3>Oficina comercial</h3>
             <p>45 m² · Microcentro · Alquiler</p>
             <a href="#tasacion">Ver más</a>
           </article>
+<!--propiedad 4-->
           <article class="card">
-            <img src="img/destacadas/casa.png" alt="Casa moderna" />
-            <h3>Casa moderna</h3>
-            <p>3 ambientes · Jardín · USD 120.000</p>
+            <img src="img/destacadas/casa_con_pileta.jpeg" alt="Casa con pileta" />
+            <h3>Casa con pileta</h3>
+            <p>5 ambientes · Pileta · USD 210.000</p>
             <a href="#tasacion">Ver más</a>
           </article>
-
+<!--propiedad 5-->
           <article class="card">
             <img
-              src="img/destacadas/departamento centrico.png"
-              alt="Departamento céntrico"
-            />
-            <h3>Departamento</h3>
-            <p>2 ambientes · Balcón · USD 85.000</p>
+              src="img/destacadas/depto_premium.jpeg"
+              alt="Departamento premium"/>
+            <h3>Departamento premium</h3> 
+            <p>3 ambientes · Balcón · USD 145.000</p>
             <a href="#tasacion">Ver más</a>
           </article>
-
+<!--propiedad 6-->
           <article class="card">
-            <img src="img/destacadas/oficina.png" alt="Oficina comercial" />
-            <h3>Oficina comercial</h3>
-            <p>45 m² · Microcentro · Alquiler</p>
+            <img src="img/destacadas/oficina_ejecutiva.jpeg" alt="Casa con pileta" />
+            <h3>Oficina ejecutiva</h3>
+            <p>80 m² · Puerto Madero · Venta</p>
             <a href="#tasacion">Ver más</a>
           </article>
         </div>
@@ -147,7 +148,25 @@
           />
         <p>Oficina grande - 45 m² -Subsuelo- Microcentro</p></div>
       </section>
+<section class="beneficios">
+  <div class="beneficio">
+    <i class="bi bi-house-check"></i>
+    <h3>Propiedades verificadas</h3>
+    <p>Revisamos cada inmueble antes de publicarlo.</p>
+  </div>
 
+  <div class="beneficio">
+    <i class="bi bi-cash-coin"></i>
+    <h3>Precios competitivos</h3>
+    <p>Encontrá opciones para distintos presupuestos.</p>
+  </div>
+
+  <div class="beneficio">
+    <i class="bi bi-geo-alt"></i>
+    <h3>Mejores zonas</h3>
+    <p>Casas, departamentos y oficinas en ubicaciones clave.</p>
+  </div>
+</section>
       <!-- Galería de propiedades en venta -->
       <section id="venta">
         <h2>Propiedades en venta</h2>
@@ -182,7 +201,10 @@
           </div>
         </div>
       </section>
-
+<section class="frase-final">
+  <h2>¿Buscás tu próximo hogar o querés vender?</h2>
+  <p>Contactanos y te ayudamos a encontrar la mejor opción.</p>
+</section>
       <!-- Formulario de tasación, obligatorio en el TP -->
       <section id="tasacion">
         <h2>Contacto - Tasaciónes</h2>
@@ -228,12 +250,47 @@
 
     <!-- Footer con datos de contacto -->
     <footer>
-      <div class="info-footer">
-        <p><i class="bi bi-telephone-fill"></i> +54 11 1234-5678</p>
-        <p><i class="bi bi-envelope-fill"></i> contacto@nuevotecho.com</p>
-      </div>
+      <footer>
+  <div class="info-footer">
+    <!-- Teléfono: al hacer click intenta llamar -->
+    <p>
+      <a href="tel:+541112345678">
+        <i class="bi bi-telephone-fill"></i> +54 11 1234-5678
+      </a>
+    </p>
 
-      <p class="copyright">© 2026 Nuevo Techo Propiedades y Hogar</p>
+    <!-- Email: al hacer click abre el programa de correo -->
+    <p>
+      <a href="mailto:contacto@nuevotecho.com">
+        <i class="bi bi-envelope-fill"></i> contacto@nuevotecho.com
+      </a>
+    </p>
+  </div>
+
+  <div class="redes-sociales">
+    <a href="img/redes/facebook.jpeg" target="_blank">
+      <i class="bi bi-facebook"></i>
+    </a>
+
+    <a href="img/redes/instagram.jpeg" target="_blank">
+      <i class="bi bi-instagram"></i>
+    </a>
+
+    <a href="https://www.whatsapp.com/?lang=es" target="_blank">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+  </div>
+
+  <p class="copyright">© 2026 Nuevo Techo Propiedades y Hogar</p>
+</footer>
     </footer>
+    <script>
+  const boton = document.getElementById("menu-toggle");
+  const menu = document.getElementById("menu");
+
+  boton.addEventListener("click", function () {
+    menu.classList.toggle("activo");
+  });
+</script>
   </body>
 </html>

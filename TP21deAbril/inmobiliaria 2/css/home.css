@@ -49,6 +49,42 @@
   text-align: center;
   padding: 20px 0;
   height: 170px;
-  font-size: 3rem;
+  font-size: clamp(1.5rem, 7vw, 3rem);
   font-weight: bold;
+}
+@media (max-width: 768px) {
+  #home img {
+    height: 35vh;
+  }
+
+  .contenido-home {
+    position: static;
+    transform: none;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 30px 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    text-align: center;
+  }
+
+  .contenido-home h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .contenido-home p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+  }
+
+  .contenido-home a {
+    display: inline-block;
+  }
+
+  .eslogan {
+    height: auto;
+    padding: 30px 20px;
+    font-size: clamp(1.5rem, 9vw, 2.5rem);
+  }
 }

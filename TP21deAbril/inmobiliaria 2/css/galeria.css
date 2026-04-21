@@ -2,7 +2,6 @@
 #alquiler,
 #venta {
   padding: 80px 40px;
-  height: 100vh;
 }
 /*id alquiler + selector h2 - id venta + selector h2*/
 #alquiler h2,
@@ -17,8 +16,7 @@
   grid-template-columns: repeat(3, 1fr); /* Para crear una cuadrícula de 3 columnas de igual ancho */
   gap: 30px;
   width: 100%;
-  height: 220px;
-  object-fit: cover;
+  object-fit: cover;/*
   border-radius: var(--radio);/* Para aplicar el mismo radio de bordes que definimos en style.css */
 }
 .contenedor-galeria img {
@@ -31,7 +29,7 @@
     margin-bottom: 100px; /* Para dar un poco de espacio entre la sección de alquiler y la siguiente sección de venta */
 }
 #venta h2{
-    margin-bottom: 80px; /* Para dar un poco de espacio entre la sección de venta y la siguiente sección (si hubiera) */
+    margin-bottom: 30px; /* Para dar un poco de espacio entre la sección de venta y la siguiente sección (si hubiera) */
 }
 
 .item-galeria img {
@@ -45,4 +43,59 @@
 
 .item-galeria img:hover {
   transform: scale(1.05);
+}
+.beneficios {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 60px 0;
+  text-align: center;
+}
+
+.beneficio {
+  background-color: white;
+  padding: 30px 20px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.beneficio i {
+  font-size: 2rem;
+  color: var(--azul);
+  margin-bottom: 15px;
+}
+
+.beneficio h3 {
+  color: var(--azul);
+  margin-bottom: 10px;
+}
+
+.beneficio p {
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  #alquiler,
+  #venta {
+    padding: 60px 20px;
+  }
+
+  .contenedor-galeria {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .item-galeria img {
+    height: 200px;
+  }
+
+  .beneficios {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .beneficio {
+    width: 100%;
+    max-width: 320px;
+  }
 }

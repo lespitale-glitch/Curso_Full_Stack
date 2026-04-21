@@ -15,8 +15,13 @@
   width: 300px;
   background-color: white;
   padding: 20px;
-  flex-shrink: 0; /* Para evitar que las tarjetas se reduzcan de tamaño si el contenedor es más pequeño */
-  transition: transform 0.3s;
+
+  display: flex;
+  flex-direction: column;
+}
+.card p {
+  margin-bottom: 15px;
+  flex-grow: 1;
 }
 
 .card:hover {
