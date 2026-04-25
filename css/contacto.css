@@ -22,6 +22,10 @@
   margin-bottom: 20px;
 }
 
+#tasacion select {
+  height: 42px;
+  box-sizing: border-box;
+
 .checkbox {
   display: flex;
   align-items: center;

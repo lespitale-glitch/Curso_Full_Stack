@@ -10,6 +10,7 @@ header {
   top: 0;
   left: 0;
   z-index: 1000;
+  
 }
 main {
   padding-top: 100px;
@@ -19,6 +20,7 @@ nav ul {
   display: flex; /* Dejo los links en linea */
   gap: 20px; /* Espacio entre los links */
   list-style: none; /* Quitar los puntos de la lista */
+
 }
 /* Estilo para links del menu, quitar subrayado y poner color azul */
 nav a {
@@ -27,7 +29,9 @@ nav a {
     --azul
   ); /* Usamos la variable de color azul definida en style.css */
   font-weight: bold; /* Hacer el texto del menu un poco mas grueso */
+ 
 }
+
 /* Estilo para el logo, alineamos el texto y la imagen en una sola linea */
 .logo {
   display: flex;
