@@ -25,7 +25,7 @@
 #tasacion select {
   height: 42px;
   box-sizing: border-box;
-
+}
 .checkbox {
   display: flex;
   align-items: center;
@@ -49,5 +49,4 @@
 }
 .checkbox label {
   margin: 0;
-}
 }
