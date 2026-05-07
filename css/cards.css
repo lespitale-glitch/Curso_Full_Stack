@@ -1,24 +1,28 @@
 .contenedor-cards {
-  display: flex; /* Para colocar las tarjetas en fila */
-  justify-content: center; /* Para centrar las tarjetas horizontalmente */
-  gap: 30px; /* Espacio entre las tarjetas */
+  display: flex;
+  justify-content: center;
+  gap: 30px;
   flex-wrap: wrap;
+  padding: 20px; 
 }
+
 #propiedades h2 {
   text-align: center;
   margin-bottom: 40px;
   padding-top: 60px;
 }
 
-/*clase card*/
 .card {
   width: 300px;
   background-color: white;
   padding: 20px;
-
   display: flex;
   flex-direction: column;
+  border-radius: var(--radio); 
+  transition: transform 0.3s ease; 
 }
+
+
 .card p {
   margin-bottom: 15px;
   flex-grow: 1;
@@ -32,6 +36,7 @@
   width: 100%;
   height: 180px;
   object-fit: cover;
+  border-radius: calc(var(--radio) - 5px); /* Nota: Ajuste estético para la imagen dentro de la card */
 }
 
 .card h3 {
@@ -40,14 +45,12 @@
   color: var(--azul);
 }
 
-.card p {
-  margin-bottom: 15px;
-}
-
 .card a {
   display: inline-block;
   background-color: var(--azul);
   color: white;
   text-decoration: none;
   padding: 10px 16px;
+  text-align: center; /* Nota: Centrar el texto del botón */
+  border-radius: 5px;
 }
